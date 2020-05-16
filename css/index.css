@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: 212121;
   --secondary-text-color: #757575;
@@ -25,13 +35,23 @@ li {
 }
 
 .logo {
-  color: #212121
+  color: #212121;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.logotype {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.site-nav {
+  display: flex;
 }
 
 .main-navigation li a {
@@ -44,22 +64,32 @@ li {
   letter-spacing: 0.02em;
 }
 
+.main-navigation {
+  display: flex;
+  margin: 0px;
+}
+
+.main-navigation .nav1 {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0px;
+}
+
+.main-navigation .nav1 + .nav1 {
+  margin-left: 50px;
+}
+
 .nav1:hover,
 .nav1:focus {
   color: #2196f3;
 }
 
-.nav2:hover,
-.nav2:focus {
-  color: #2196f3;
-}
-
-.nav3:hover,
-.nav3:focus {
-  color: #2196f3;
-}
-
 .link-current:hover {
+  color: #2196f3;
+}
+
+.link-current {
   color: #2196f3;
 }
 
@@ -80,6 +110,22 @@ li {
 .mail li a:focus {
   color: #2196f3;
 }
+
+.mail {
+  display: flex;
+}
+
+.mail .mail1 {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0px;
+}
+
+.mail .mail1 + .mail1 {
+  margin-left: 26px;
+}
+
 .hero {
   color: var(--less-white-color);
   background-color: #a1c8e9;

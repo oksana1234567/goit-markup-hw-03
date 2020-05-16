@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
@@ -16,31 +20,35 @@
   <body>
     <header>
       <nav>
-        <a href="">
-          <span class="accent">Web</span> <span class="logo">Studio</span>
-        </a>
-        <ul class="main-navigation">
-          <li><a class="nav1" href="./index.html">Студия</a></li>
-          <li>
-            <a class="link-current" class="nav2" href="./portfolio.html"
-              >Портфолио</a
-            >
-          </li>
-          <li><a class="nav3" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="mail">
-        <li>
-          <a href=""
-            ><img src="./svg/envelopenew.svg" alt="Пошта" /> info@devstudio.com
+        <div class="site-nav">
+          <a class="logotype" href="">
+            <span class="accent">Web</span> <span class="logo">Studio</span>
           </a>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./svg/Vector.svg" alt="Номер" /> +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+          <ul class="main-navigation">
+            <li class="nav1">
+              <a class="link-current" href="./index.html">Студия</a>
+            </li>
+            <li class="nav1">
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav1"><a href="">Контакты</a></li>
+          </ul>
+
+          <ul class="mail">
+            <li class="mail1">
+              <a href=""
+                ><img src="./svg/envelopenew.svg" alt="Пошта" />
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mail1">
+              <a href=""
+                ><img src="./svg/Vector.svg" alt="Номер" /> +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div>
       <section>
