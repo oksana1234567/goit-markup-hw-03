@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-ДЗ3 №3
+# home-assignment-2
+home-assignment-2

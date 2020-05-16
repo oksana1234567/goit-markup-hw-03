@@ -1,0 +1,193 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --less-white-color: #ffffff;
+  --background-grey-color: #f5f4fa;
+}
+font-family: "Roboto", sans-serif;
+font-family: "Raleway", sans-serif;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.accent {
+  color: #2196f3;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.main-navigation li a {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav1:hover,
+.nav1:focus {
+  color: #2196f3;
+}
+
+.nav2:hover,
+.nav2:focus {
+  color: #2196f3;
+}
+
+.nav3:hover,
+.nav3:focus {
+  color: #2196f3;
+}
+
+.link-current:hover {
+  color: #2196f3;
+}
+
+.main-navigation .link-current {
+  color: #2196f3;
+}
+
+.mail li a {
+  color: var(--secondary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.mail li a:hover,
+.mail li a:focus {
+  color: #2196f3;
+}
+
+.button-primary li button {
+  color: var(--primary-text-color);
+  background-color: var(--background-grey-color);
+}
+
+.button-primary li button:hover,
+.button-primary li button:focus {
+  color: #2196f3;
+}
+.second-header {
+  color: var(--primary-text-color);
+}
+
+.logo2 {
+  color: var(--less-white-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.accent2 {
+  color: #2196f3;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.footer-class {
+  background-color: #2f303a;
+}
+.logo2 {
+  color: var(--less-white-color);
+}
+.adress-footer {
+  color: var(--less-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.mail-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.join {
+  color: var(--less-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.developed {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.second-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.filtrs {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.desc-for-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: var(--background-grey-color);
+  /* для видимости */
+}
