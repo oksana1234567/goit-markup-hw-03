@@ -13,15 +13,62 @@ html {
   --secondary-text-color: #757575;
   --less-white-color: #ffffff;
   --background-grey-color: #f5f4fa;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-font-family: "Roboto", sans-serif;
-font-family: "Raleway", sans-serif;
+
 a {
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.logotype {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.main-navigation {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 86px;
+}
+
+.main-navigation .nav1 + .nav1 {
+  margin-left: 50px;
+}
+
+.mail {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 335px;
+}
+
+.mail .mail1 + .mail1 {
+  margin-left: 31px;
 }
 
 .accent {
@@ -44,16 +91,6 @@ li {
   letter-spacing: 0.03em;
 }
 
-.logotype {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.site-nav {
-  display: flex;
-}
-
 .main-navigation li a {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -62,22 +99,6 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.main-navigation {
-  display: flex;
-  margin: 0px;
-}
-
-.main-navigation .nav1 {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin: 0px;
-}
-
-.main-navigation .nav1 + .nav1 {
-  margin-left: 50px;
 }
 
 .nav1:hover,
@@ -111,26 +132,10 @@ li {
   color: #2196f3;
 }
 
-.mail {
-  display: flex;
-}
-
-.mail .mail1 {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin: 0px;
-}
-
-.mail .mail1 + .mail1 {
-  margin-left: 26px;
-}
-
 .hero {
   color: var(--less-white-color);
   background-color: #a1c8e9;
   /* на макете нет заливки, только что бы было видно текст белым цветом */
-  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -138,6 +143,8 @@ li {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0px;
+  margin-top: 201px;
 }
 
 .order-service {
@@ -149,14 +156,29 @@ li {
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  text-align: center;
   letter-spacing: 0.06em;
+
+  display: inline-block;
+  text-decoration: none;
+
+  vertical-align: middle;
+  /* почему не посредине текст */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  margin-top: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  scroll-padding-left: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
-/* .svg-back:hover {
-  color: #2196f3;
-} */
-/* если правильно поняла, этот ховер делается не так и его пока игнорировать */
+.hero-full {
+  display: inline-block;
+  text-align: center;
+}
 
 .benefits-head {
   color: var(--primary-text-color);
@@ -167,6 +189,26 @@ li {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 188px;
+  margin-top: 293px;
+}
+
+.benefits .benefits-element {
+  height: 251px;
+  width: 270px;
+}
+
+.benefits .benefits-element + .benefits-element {
+  margin-left: 30px;
 }
 
 .benefits-descr {
@@ -177,6 +219,19 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.picture-background {
+  display: inline-block;
+  text-decoration: none;
+  width: 270px;
+  height: 117px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .head-2-descr {
@@ -188,6 +243,26 @@ li {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 190px;
+  margin-top: 50px;
+}
+
+.work .work-element {
+  height: 291px;
+  width: 370px;
+}
+
+.work .work-element + .work-element {
+  margin-left: 30px;
 }
 
 .work-head {
@@ -200,10 +275,40 @@ li {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 370px;
+  height: 70px;
+  margin: 0px;
+  vertical-align: middle;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team {
   background-color: var(--background-grey-color);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 105px
+  margin-top: 50px;
+  padding-top: 104px;
+  padding-bottom: 92px;
+}
+
+.team .team-element {
+  height: 417px;
+  width: 270px;
+}
+
+.team .team-element + .team-element {
+  margin-left: 30px;
 }
 
 .developed {
@@ -214,6 +319,9 @@ li {
   line-height: 2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+
+  display: block;
+  text-align: center;
 }
 
 .name {
@@ -224,6 +332,9 @@ li {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 13px;
+  margin: 0px;
 }
 
 .job {
@@ -234,6 +345,87 @@ li {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+.h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.team .team-element {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.name-job {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 273px;
+  height: 105px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons .icons-element {
+  height: 20px;
+  width: 20px;
+}
+
+.icons .icons-element + .icons-element {
+  margin-left: 35px;
+}
+
+.comapanies {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.comapanies .comapanies-example + .comapanies-example {
+  margin-left: 30px;
+}
+
+.comapanies-example {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 65px;
+  padding-left: 65px;
+}
+
+.flex-footer {
+  display: flex;
+  padding-top: 47px;
+  padding-bottom: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-footer .footer-element + .footer-element {
+  margin-left: 80px;
+}
+
+.social-icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icon-footer .social-element {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icon-footer .social-element + .social-element {
+  margin-left: 10px;
 }
 
 .logo2 {

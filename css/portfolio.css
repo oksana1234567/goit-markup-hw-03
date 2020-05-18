@@ -16,12 +16,59 @@ html {
 }
 font-family: "Roboto", sans-serif;
 font-family: "Raleway", sans-serif;
+
 a {
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.logotype {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.main-navigation {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 86px;
+}
+
+.main-navigation .nav1 + .nav1 {
+  margin-left: 50px;
+}
+
+.mail {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 335px;
+}
+
+.mail .mail1 + .mail1 {
+  margin-left: 31px;
 }
 
 .accent {
@@ -35,7 +82,7 @@ li {
 }
 
 .logo {
-  color: var(--primary-text-color);
+  color: #212121;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -59,17 +106,11 @@ li {
   color: #2196f3;
 }
 
-.nav2:hover,
-.nav2:focus {
-  color: #2196f3;
-}
-
-.nav3:hover,
-.nav3:focus {
-  color: #2196f3;
-}
-
 .link-current:hover {
+  color: #2196f3;
+}
+
+.link-current {
   color: #2196f3;
 }
 
@@ -86,7 +127,6 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .mail li a:hover,
 .mail li a:focus {
   color: #2196f3;
@@ -97,12 +137,114 @@ li {
   background-color: var(--background-grey-color);
 }
 
+.button-primary {
+  display: flex;
+  margin-top: 90px;
+  margin-left: 295px;
+  margin-right: 295px;
+  margin-bottom: 50px;
+}
+
+.button-primary .button-element + .button-element {
+  margin-left: 7px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.button-primary .li {
+  padding: 0px;
+  margin: 0px;
+}
+
 .button-primary li button:hover,
 .button-primary li button:focus {
   color: #2196f3;
 }
+
 .second-header {
-  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin: 0px;
+  padding: 0px;
+}
+
+.filtrs {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.desc-for-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: var(--background-grey-color);
+  /* для видимости */
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px;
+}
+
+.projects-element:nth-child (3n + 1) {
+  margin-right: 0px;
+}
+
+/* ПОЧЕМУ не работает псевдоселектор? поставила правый отступ 15 вместо 30, что бы встали норм*/
+/* нужно исправить, но я не понимаю, где ошибка */
+.projects-element {
+  margin-right: 15px;
+}
+
+.projects-element {
+  display: inline-block;
+  width: 370px;
+  height: 403px;
+}
+
+.flex-footer {
+  display: flex;
+  padding-top: 47px;
+  padding-bottom: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-footer .footer-element + .footer-element {
+  margin-left: 80px;
+}
+
+.social-icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icon-footer .social-element {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icon-footer .social-element + .social-element {
+  margin-left: 10px;
 }
 
 .logo2 {
@@ -168,36 +310,7 @@ li {
   line-height: 2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
-}
 
-.second-header {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-.filtrs {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.desc-for-header {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: var(--background-grey-color);
-  /* для видимости */
+  display: block;
+  text-align: center;
 }
