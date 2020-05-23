@@ -5,17 +5,19 @@ html {
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
 :root {
-  --primary-text-color: #212121;
+  --primary-text-color: 212121;
   --secondary-text-color: #757575;
   --less-white-color: #ffffff;
   --background-grey-color: #f5f4fa;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-font-family: "Roboto", sans-serif;
-font-family: "Raleway", sans-serif;
 
 a {
   text-decoration: none;
@@ -30,7 +32,7 @@ li {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -39,12 +41,12 @@ li {
 
 .site-nav {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
+  /* margin-left: 200px; */
+  /* margin-right: 200px; */
 }
 
 .logotype {
-  display: inline-block;
+  display: block;
   margin-top: 24px;
   margin-bottom: 25px;
 }
@@ -53,7 +55,7 @@ li {
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-left: 86px;
+  margin-left: 85px;
 }
 
 .main-navigation .nav1 + .nav1 {
@@ -64,11 +66,11 @@ li {
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-left: 335px;
+  margin-left: 305px;
 }
 
 .mail .mail1 + .mail1 {
-  margin-left: 31px;
+  margin-left: 30px;
 }
 
 .accent {
@@ -132,20 +134,20 @@ li {
   color: #2196f3;
 }
 
-.button-primary li button {
+.button-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  border-top: 1px solid #ececec;
+}
+
+.button-flex li button {
   color: var(--primary-text-color);
   background-color: var(--background-grey-color);
 }
 
-.button-primary {
-  display: flex;
-  margin-top: 90px;
-  margin-left: 295px;
-  margin-right: 295px;
-  margin-bottom: 50px;
-}
-
-.button-primary .button-element + .button-element {
+.button-flex .button-element + .button-element {
   margin-left: 7px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -153,13 +155,8 @@ li {
   padding-left: 0px;
 }
 
-.button-primary .li {
-  padding: 0px;
-  margin: 0px;
-}
-
-.button-primary li button:hover,
-.button-primary li button:focus {
+.button-flex button:hover,
+.button-flex button:focus {
   color: #2196f3;
 }
 
@@ -171,7 +168,8 @@ li {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 4px;
   padding: 0px;
 }
 
@@ -183,6 +181,7 @@ li {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 20px;
 }
 
 .desc-for-header {
@@ -200,37 +199,43 @@ li {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0px;
+  justify-content: space-between;
+  padding-bottom: 94px;
 }
 
-.projects-element:nth-child (3n + 1) {
-  margin-right: 0px;
+.projects-element:nth-child(3n + 1) {
+  margin-left: 0px;
 }
 
-/* ПОЧЕМУ не работает псевдоселектор? поставила правый отступ 15 вместо 30, что бы встали норм*/
-/* нужно исправить, но я не понимаю, где ошибка */
+.projects-element:nth-child(-n + 3) {
+  margin-top: 0px;
+}
+
 .projects-element {
-  margin-right: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
 }
 
 .projects-element {
   display: inline-block;
   width: 370px;
-  height: 403px;
+  height: 404px;
 }
 
 .flex-footer {
   display: flex;
   padding-top: 47px;
-  padding-bottom: 48px;
+  padding-bottom: 28px;
   padding-left: 15px;
   padding-right: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .flex-footer .footer-element + .footer-element {
-  margin-left: 80px;
+  margin-left: 69px;
 }
 
 .social-icon-footer {
@@ -281,6 +286,7 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 .mail-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -290,7 +296,20 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 9px;
 }
+
+.number-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 9px;
+}
+
 .join {
   color: var(--less-white-color);
   font-family: Roboto;
@@ -300,6 +319,7 @@ li {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 21px;
 }
 
 .developed {
@@ -313,4 +333,7 @@ li {
 
   display: block;
   text-align: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  align-items: center;
 }
