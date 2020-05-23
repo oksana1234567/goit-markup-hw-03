@@ -171,6 +171,7 @@ li {
   margin-top: 20px;
   margin-bottom: 4px;
   padding: 0px;
+  margin-left: 24px;
 }
 
 .filtrs {
@@ -182,6 +183,7 @@ li {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 20px;
+  margin-left: 24px;
 }
 
 .desc-for-header {
