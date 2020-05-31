@@ -47,14 +47,14 @@ li {
 
 .logotype {
   display: block;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .main-navigation {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: 85px;
 }
 
@@ -64,8 +64,8 @@ li {
 
 .mail {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: 305px;
 }
 
@@ -151,7 +151,7 @@ li {
 }
 
 .button-element {
-  font-family: Roboto;
+  /* font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -169,11 +169,33 @@ li {
   padding-left: 20px;
 
   background: #f5f4fa;
+  border-radius: 4px; */
+}
+
+.button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  /* width: auto;
+  height: 26px; */
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background: #f5f4fa;
   border-radius: 4px;
 }
 
-.button-flex button:hover,
-.button-flex button:focus {
+.button-element:hover,
+.button-element:focus {
   color: #2196f3;
 }
 
@@ -199,7 +221,7 @@ li {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   margin-left: 24px;
 }
 
@@ -236,6 +258,7 @@ li {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 5px;
+  padding-bottom: 20px;
 }
 
 .projects-element {

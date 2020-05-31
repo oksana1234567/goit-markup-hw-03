@@ -47,14 +47,14 @@ li {
 
 .logotype {
   display: block;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .main-navigation {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: 85px;
 }
 
@@ -64,8 +64,8 @@ li {
 
 .mail {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: 305px;
 }
 
@@ -146,16 +146,12 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 646px;
-  text-align: center;
-  justify-content: center;
 }
-/* как поставить h1 по цетнтру? */
 
 .hero-order {
   background-color: var(--secondary-text-color);
   padding-top: 200px;
-  padding-left: 477px;
-  padding-right: 477px;
+  margin: auto;
   text-align: center;
   align-items: center;
   display: flex;
@@ -203,8 +199,8 @@ li {
 .benefits {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
   padding-top: 94px;
   padding-bottom: 94px;
   width: 1200px;
@@ -241,6 +237,7 @@ li {
   padding-bottom: 25px;
   padding-left: 100px;
   padding-right: 100px;
+  background-color: #f5f4fa;
 }
 
 .directions {
@@ -263,16 +260,16 @@ li {
 .work {
   display: flex;
   justify-content: space-between;
-  padding-right: 15px;
+  /* padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 190px;
-  margin-top: 50px;
+  margin-top: 50px; */
 }
 
-.work .work-element {
+/* .work .work-element {
   height: 294px;
   width: 370px;
-}
+} */
 
 .work .work-element + .work-element {
   margin-left: 30px;
@@ -309,8 +306,8 @@ li {
 .team {
   display: flex;
   justify-content: space-between;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
 }
 
 .team .team-element {
